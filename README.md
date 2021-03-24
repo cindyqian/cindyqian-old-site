@@ -1,5 +1,3 @@
-## Hello! My name is Cindy Qian.
+## Hello! This is my personal site :)
 
-I'm a first year student at the University of Washington—Seattle and am originally from the San Francisco Bay Area. Although I'm still exploring different fields of study, I know that my passions revolve around technology, media, and communications. 
-
-I hope to find a way to combine my interests and be able to bring people and society together through my work. I currently plan to major in either Computer Science or Informatics.
+It's written in HTML5, CSS3, and Javascript, but I am currently redesigning [cindyqian.com](cindyqian.com) with React.
