@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head><title>Cindy Qian's Page</title>
+<link rel="stylesheet" type="text/css" href="http://www.markqian.com/css3/truck/css/butterfly.css">
+<script src="http://www.markqian.com/js/soundmanager2-nodebug-jsmin.js"></script>
+<script type="text/javascript" src="http://www.markqian.com/js/jquery-1.8.2.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+		soundManager.setup({
+		  	url: 'http://www.coolshare.com/cindyqian/swf/',
+		  	onready: function() {
+			  	soundManager.createSound({
+				  	id: 'happy',
+				  	url: 'sounds/happy.mp3'
+			  	});
+			  	soundManager.play('happy');
+		  	}
+		});
+	});
+</script>
+</head>
+<body background="http://freewallpaperspot.com/wallpapers/texture-background-7.jpg">
+
+<center>
+	<h2>Welcome to Cindy's Home Page</h2>
+	<img src="http://www.coolshare.com/cindyqian/images/logo.png" style="width:250px;height:200px"/>
+</center>
+
+<h3>Things that may interest you:</h3>
+<ul>	<li><a href="BoardGames" target=_blank>Board Games</a>
+	<br/>
+	<li><a href="http://www.coolshare.com/cindyqian/articles/my_articles.html" target="_blank">My articles</a></li>
+	<li><a href="http://www.coolshare.com/cindyqian/old.html">My old page</a></li>
+	<li><a href="http://www.coolshare.com/cindyqian/pages/my_pictures.html"  target="_blank">My pictures</a></li>
+<img src="http://www.markqian.com/css3/truck/images/img8.gif" id="butterfly"/>
+</ul>
+</body>
+</html>

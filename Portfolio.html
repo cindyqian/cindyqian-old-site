@@ -1,0 +1,196 @@
+<html>
+	
+	<script>
+		function changeArrowDisplays(e){
+			let x = e.id;
+			if(x == "arrowOutline1" || x == "arrowFilled1"){
+				if(document.getElementById("arrowOutline1").style.display == "block"){
+					document.getElementById("arrowOutline1").style.display = "none";
+					document.getElementById("arrowFilled1").style.display = "block";
+
+				}else{
+					document.getElementById("arrowOutline1").style.display = "block";
+					document.getElementById("arrowFilled1").style.display = "none";
+				}
+
+			}else if(x == "arrowOutline2" || x == "arrowFilled2"){
+				if(document.getElementById("arrowOutline2").style.display == "block"){
+					document.getElementById("arrowOutline2").style.display = "none";
+					document.getElementById("arrowFilled2").style.display = "block";
+
+				}else{
+					document.getElementById("arrowOutline2").style.display = "block";
+					document.getElementById("arrowFilled2").style.display = "none";
+				}
+			}
+
+			
+
+		}
+
+		function changerectangleOpacity(e){
+			let x = e.id;
+			if(x == "graphicDesignImage" || x == "whiteRectangle1"){
+				if(document.getElementById("whiteRectangle1").style.display == "block"){
+					document.getElementById("whiteRectangle1").style.display = "none";
+
+				}else{
+					document.getElementById("whiteRectangle1").style.display = "block";
+				}
+
+			}else if(x == "photographyImage" || x == "whiteRectangle2"){
+				if(document.getElementById("whiteRectangle2").style.display == "block"){
+					document.getElementById("whiteRectangle2").style.display = "none";
+
+				}else{
+					document.getElementById("whiteRectangle2").style.display = "block";
+				}
+			}
+
+			
+
+		}
+
+
+
+
+
+
+	</script>
+
+
+
+	
+
+	
+
+
+	<head>
+        <meta charset="utf-8">
+		<title>Portfolio</title>
+        <link rel="stylesheet" href="main.css">
+	</head>
+	
+	<body style= "padding-bottom: 50%;">
+        <div>
+            <ul class="topnav">
+                <a href="file:///Users/markqian/Desktop/yuh/index.html">About Me</a>
+                <a href="file:///Users/markqian/Desktop/yuh/Resume.html">Resume</a>
+                <a href="file:///Users/markqian/Desktop/yuh/Portfolio.html">Portfolio</a>
+                <a href="file:///Users/markqian/Desktop/yuh/contact.html">Contact</a>
+            </ul>
+		</div>
+		
+		<!-- <button class="tablink" onclick="openPage('GraphicDesign', this, 'red')" id="defaultOpen">Graphic Design</button>
+		<button class="tablink" onclick="openPage('Photography', this, 'green')" >Photography</button>
+		<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+		<button class="tablink" onclick="openPage('About', this, 'orange')">About</button> -->
+
+
+
+		<div class="menu">
+
+
+			<div>
+				<svg width="300" height="500" style= "position: absolute; left: 25%; top: 235;">
+					<rect width="300" height="500" style="fill:#A0B6BA" />
+				</svg>
+				<!-- <img id= "graphicDesignImage" onmouseover="changerectangleOpacity(this);" onmouseout= "changerectangleOpacity(this);" width="300" height= auto style= "display: block; position: absolute; left: 25%; top: 235" src="/Users/markqian/Desktop/yuh/photos/pen.png"> -->
+				<svg id= "whiteRectangle1" width="300" height="500" style= "display: none; position: absolute; left: 25%; top: 235;">
+					<rect width="300" height="500" style="fill: rgb(255, 111, 255, 0.5); " />
+				</svg>
+			</div>
+
+
+
+
+
+
+			<!-- <a class="active" href="#GraphicDesign">Graphic Design</a>
+			<a href="#Photography">Photography</a>
+			<a href="#contact">Contact</a>
+			<a href="#about">About</a> -->
+		</div>
+
+
+
+
+
+		<!-- <div>
+			<h1 style= "left: 25%; top: 20%; text-align: right;">Graphic Design</h1>
+			<svg width="200" height="200" style= "position: absolute; left: 37%; top: 220;">
+                <rect width="200" height="200" style="fill:#839A9E; " />
+            </svg>
+            <svg width="200" height="200" style= "position: absolute; left: 38%; top: 235;">
+                <rect width="200" height="200" style="fill:#A0B6BA; " />
+			</svg>
+
+			<div width="200" height="200" style= "position: absolute; left: 37%; top: 100;">
+                
+				<img id= "arrowOutline1" onmouseover="changeArrowDisplays(this);" onmouseout= "changeArrowDisplays(this);" width="70" height= auto style= "display: block; position: absolute; left: 85%; top: 210" src="/Users/markqian/Desktop/yuh/photos/ArrowOne.png">
+				<img id= "arrowFilled1" onmouseover="changeArrowDisplays(this);" onmouseout= "changeArrowDisplays(this);" width="70" height= auto style= "display: none; position: absolute; left: 85%; top: 210" src="/Users/markqian/Desktop/yuh/photos/ArrowThree.png">
+				
+				
+			</div>
+
+
+		</div>
+ -->
+
+
+
+
+
+
+		<!-- Graphic Design Section -->
+
+        <!-- <div>
+			<h1 style= "left: 8%; top: 40%; text-align: right;">Graphic <br>Design</h1>
+			<svg width="750" height="320" style= "position: absolute; left: 37%; top: 220;">
+                <rect width="750" height="320" style="fill:#839A9E; " />
+            </svg>
+            <svg width="750" height="320" style= "position: absolute; left: 38%; top: 235;">
+                <rect width="750" height="320" style="fill:#A0B6BA; " />
+			</svg>
+
+			<div width="750" height="320" style= "position: absolute; left: 42%; top: 250;">
+                <p class= "pText" style= "font: 15px OpenSans-Light; color:#ffffff; line-height: 1.6">
+
+                    
+
+					I discovered graphic design in my sophomore year of high school and have been exploring <br>
+					and developing both the technical and creative side of design since. I am self taught in <br>
+					Adobe Photoshop and Adobe Illustrator. I've dabbled in both 2D art and animations; recently <br>
+					my art has mainly centered around recreating real life images and objects in a cartoon-y or <br>
+					minimalistic way.
+					
+					
+					<br>
+					<br>
+
+					In the past few years, I created most of my art for social media promotion or school events.<br>
+					In the future, I hope to personalize my art and find my own style.
+
+                    <br>
+					<br>
+
+
+				</p>
+				<img id= "arrowOutline1" onmouseover="changeArrowDisplays(this);" onmouseout= "changeArrowDisplays(this);" width="70" height= auto style= "display: block; position: absolute; left: 85%; top: 210" src="/Users/markqian/Desktop/yuh/photos/ArrowOne.png">
+				<img id= "arrowFilled1" onmouseover="changeArrowDisplays(this);" onmouseout= "changeArrowDisplays(this);" width="70" height= auto style= "display: none; position: absolute; left: 85%; top: 210" src="/Users/markqian/Desktop/yuh/photos/ArrowThree.png">
+				
+				
+			</div> -->
+			
+
+
+
+
+
+
+
+
+		
+	</body> 
+
+</html>

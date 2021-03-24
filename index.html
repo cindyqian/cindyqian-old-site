@@ -1,0 +1,428 @@
+
+
+<html>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+                ////////////////////////////////////////////////////////////////////////////////////////////////CHANGE TO MATCH FROM TOP HEIGHT////////////////////////////////////////////////
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+    </script>
+
+    <!-- <script>
+
+        mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+        }
+
+    </script> -->
+
+    <script>
+        function mailOnClick(){
+            window.location.href = "mailto:cindyqian.yushi@gmail.com?subject=Hello!";
+            // &body=";
+        }
+
+    </script>
+    
+        
+
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cindy Qian</title>
+        <link rel="stylesheet" href="/Users/markqian/Desktop/yuh/styles/main.css">
+	
+
+    </head>
+
+
+        <!-- add onhover cursor: pointer; -->
+
+
+    <body>
+        
+        
+        <!-- <div class="parallax"></div> -->
+
+        <div id= "top-container">
+            <ul class="topnav">
+                <a href="#top">About Me</a>
+                <a href="#portfolioRedirect">Portfolio</a>
+                <a target="_blank" rel="noopener noreferrer" href="/Users/markqian/Desktop/yuh/CindyQianResume.pdf">Resume</a>
+                <a href="#contactRedirect">Contact</a>
+            </ul>
+        </div>
+
+
+        <div id= "home">
+
+            <!-- Heading -->
+            <div id= "about-container">
+
+                <div id= "profile-container">
+
+                    <svg id= "profile-image-back"></svg>
+                    
+                    <img class= "img" id= "profile-image" 
+                        src="photos/CindyFace.png"/>
+                
+                    <!-- <h1 id= "name" style= "top: 55%; left: 28.5%; text-align: right; color: #A0B6BA; 
+                                font: 45px OpenSans-Light; font-weight: 600; line-height: 1.3em; 
+                                text-transform: uppercase; letter-spacing: 0.5em; position: absolute;">Cindy <br>Qian</h1> -->
+                    <h1 id= "name">Cindy <br>Qian</h1>
+
+                </div>
+
+                <!-- Overlapping Rectangles -->
+
+                <div id= "intro-container">
+
+                
+                        <svg id= "intro-back-rectangle"></svg>
+
+                        <svg id= "intro-front-rectangle"></svg>
+
+
+                    <!-- Text of Paragraph -->
+
+                    <div id= "intro-text-container">
+                        <p id= "intro-text">
+
+                            <span id= "bold-hello">Hello!</span><br>
+                            I'm a first year student at the 
+                            University of Washington—Seattle and
+                            am originally from the San Francisco
+                            Bay Area. Although I' a'm still exploring
+                            different fields of study, I know that my
+                            passions revolve around technology,
+                            media, and communications. <br><br>
+                            
+                            In the future, I hope to find a way to
+                            combine my interests and be able to
+                            bring people and society together
+                            through my work. I currently plan
+                            to major in either CS or Informatics.
+                            
+                            
+                            <!-- I'm a college freshman from the <br>
+                            San Francisco Bay Area.
+
+                            <br>
+                            <br>
+                            Throughout high school, I explored <br>
+                            my passion for graphic design, business, <br>
+                            and technology. I hope to pursue my <br>
+                            interests through my studies in <br>
+                            Computer Science and Informatics at <br>
+                            the University of Washington—Seattle.
+
+                            <br>
+                            <br>
+                            Some of my other interests include:<br>
+                            psychology, communications, <br>
+                            and media.  -->
+                        </p>
+            
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div id= "portfolioRedirect"></div> <!-- random block so portfolio redirect doesn't look badly spaced -->
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <!-- Portfolio squares -->
+
+        <div class= "flex" id= "portfolio">
+
+
+
+            <!-- Graphic Design & Photography-->
+            <div id= "graphicDesignSquare" class= "portfolioSquares">
+                
+                <!-- <svg id= "graphicDesignBlueInside">
+                    <rect width="100%" height="100%" style="fill:#A0B6BA; " />
+                </svg> -->
+
+                <h1 id= "graphicDesignHeader">Design <br>& Media</h1>
+
+
+
+                <p id= "gdText">
+
+                    <!-- need to make bolder -->
+                    <b id="internalHeaders" style="-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #ffffff; color: #ffffff;
+                    background-color: #4b4b57">Currently using . . .</b>
+                    <br>Adobe Photoshop, <br>
+                    Illustrator, Lightroom.</b>
+                    <br><br>
+
+
+                </p>
+
+
+
+
+
+
+
+                <div id= "behanceIconOuterDiv">
+
+                    <!-- BEHANCE -->
+                    <div id= "behance" >
+                        <a id= "behanceButton" target="_blank" rel="noopener noreferrer" href="https://www.behance.net/cindyqian" class="portfolioIcon icon behance fa fa-behance"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Leadership -->
+            <div id= "leadershipSquare" class= "portfolioSquares">
+
+
+                <h1 id= leadershipHeader>Leader <br>ship</h1>
+
+                <p id= "leadText">
+
+                            
+                    <b id="internalHeaders" style="-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #ffffff; color: #ffffff;
+                    background-color: #4b4b57">Cupertino HS</b>
+                    <br>Associated Student Body <br>Graphic Design & Social Media<br>
+
+
+
+                </p>
+            
+
+                    
+                    <div id= "leadIconOuterDiv">
+
+                    <!-- MAKE A WISH -->
+                    <div id= "makeAWish" >
+                        <a id= "makeAWishButton" target="_blank" rel="noopener noreferrer" href="https://www.nbcbayarea.com/news/local/south-bay-high-school-raises-thousands-to-grant-boys-wish/160323/" 
+                            class="portfolioIcon icon makeAWish fa fa-heart "></a>
+                    </div>
+
+                    
+                    <!-- LIPDUB -->
+                    <div id= "lipdub" >
+                        <a id= "lipdubButton" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=UQYyLKgbKs4" class="portfolioIcon icon youtube fa fa-youtube"></a>
+                    </div>
+
+                    <!-- CHANGE -->
+                    <div id= "TBD">
+                        <a id= "TBDButton" target="_blank" rel="noopener noreferrer" href="CHANGE" class="portfolioIcon icon CHANGE fa fa-star"></a>
+                    </div>
+                    
+                    </div>
+                
+                
+                
+            </div>
+
+            <!-- CS -->
+
+            <div id= "csSquare" class= "portfolioSquares">
+
+            
+                <h1 id= "csHeader">CS <br></h1>
+
+
+                <p id= "githubText">
+
+                            
+                    <b id="internalHeaders" style="-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #ffffff; color: #ffffff;
+                    background-color: #4b4b57">Languages</b>
+                    <br>Java, JS, <br>CSS3, HTML5<br>
+                    <b></b>
+
+                </p>
+
+
+
+                <!-- GITHUB -->
+                <div id= "github" >
+                    <a id= "githubButton" target="_blank" rel="noopener noreferrer" href="https://github.com/cindyqian" class="portfolioIcon icon github fa fa-github"></a>
+                </div>
+
+                <p id= "devpostText">
+
+                            
+                    <b id="internalHeaders" style="-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #ffffff; color: #ffffff;
+                    background-color: #4b4b57">Projects</b>
+                    <br>Hack '20:<br>
+                    "Spare To Care"
+                    <b></b>
+
+
+                </p>
+                                
+
+
+                <!-- DEVPOST -->
+                <div id= "devpost">
+                    <a id= "devpostButton" target="_blank" rel="noopener noreferrer" href="https://devpost.com/software/spare-to-care#" class="portfolioIcon icon devpost fa fa-link"></a>
+                    
+                    <!-- <img id= "devpostIcon" width="45%" height= auto class= "portfolioIcon icon devpost image"; src= "/Users/markqian/Desktop/yuh/photos/icons/devpost.png" style= "position: absolute; top: 19%; left: 28%;" /> -->
+                </div>
+
+
+
+                <p id= "devpostText2">
+
+                            
+                    <br>Hacklympics '20:<br>
+                    "Chameleon"
+                    <b></b>
+                    <!-- https://devpost.com/software/spare-to-care -->
+
+                </p>
+                                
+
+
+                <!-- DEVPOST -->
+                <div id= "devpost2">
+                    <a id= "devpostButton" target="_blank" rel="noopener noreferrer" href="https://devpost.com/software/chameleon-l69en2" class="portfolioIcon icon devpost fa fa-link"></a>
+                    
+                    <!-- <img id= "devpostIcon" width="45%" height= auto class= "portfolioIcon icon devpost image"; src= "/Users/markqian/Desktop/yuh/photos/icons/devpost.png" style= "position: absolute; top: 19%; left: 28%;" /> -->
+                </div>
+
+
+
+            
+            </div>
+            
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        <div id= "contactRedirect"></div> <!-- random block so portfolio redirect doesn't look badly spaced -->
+        
+
+        <!-- Portfolio squares -->
+
+        <div id= "contact" >
+
+
+            <!-- GMAIL -->
+            <div id= "mail" class= "bottomIcons icon" onclick="mailOnClick()" >
+                <a id= "mailButton" target="_blank" rel="noopener noreferrer" href="#" class="fa fa-google"></a>
+            </div>
+
+            <!-- FACEBOOK -->
+            <div id= "facebook" class= "bottomIcons icon" >
+                <a id= "fbButton" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/cindyqiann" class="fa fa-facebook"></a>
+            </div>
+            
+
+            <!-- LINKEDIN -->
+            <div id= "linkedin" class= "bottomIcons icon" >
+                <a id= "linkedinButton" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/cindyqiann" class="fa fa-linkedin"></a>
+            </div>
+
+
+            
+
+            
+
+            
+
+            <!-- INSTAGRAM -->
+            <div id= "instagram" class= "bottomIcons icon" >
+                <a id= "instagramButton" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/cindyqiann" class="fa fa-instagram"></a>
+            </div>
+
+
+            
+
+            
+        </div>
+
+        <div id="copyright">
+            <p>Copyright © 2020 Cindy Qian</p>
+        </div>
+
+
+
+        
+
+        
+
+
+
+
+
+
+            
+
+    </body>
+
+
+
+
+</html>
+</meta>
+

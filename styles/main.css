@@ -1,0 +1,1334 @@
+/* html {
+  background-color: #ffffff;
+
+} */
+
+/* @font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../OpenSans-web-font-kit/OpenSans-Light.eot');
+  src: url('../OpenSans-web-font-kit/OpenSans-Light.eot') format('embedded-opentype'),
+       url('../OpenSans-web-font-kit/opensans-light-webfont.woff2') format('woff2'),
+       url('../OpenSans-web-font-kit/opensans-light-webfont.woff') format('woff'),
+       url('../OpenSans-web-font-kit/OpenSans-Light.ttf'),
+       url('../OpenSans-web-font-kit/OpenSans-Light.svg') format('svg');
+} */
+
+/* @font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../OpenSans-web-font-kit/OpenSans-Regular.eot');
+  src: url('../OpenSans-web-font-kit/OpenSans-Regular.eot') format('embedded-opentype'),
+       url('../OpenSans-web-font-kit/opensans-regular-webfont.woff2') format('woff2'),
+       url('../OpenSans-web-font-kit/opensans-regular-webfont.woff') format('woff'),
+       url('../OpenSans-web-font-kit/OpenSans-Regular.ttf'),
+       url('../OpenSans-web-font-kit/OpenSans-Regular.svg') format('svg');
+} */
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url('OpenSans-web-font-kit/OpenSans-Light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Open Sans Regular";
+  src: url('OpenSans-web-font-kit/OpenSans-Regular.ttf') format("truetype");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+
+
+
+
+html{ /* code said to add body too??, 
+      a way to group overall color w body 
+      so it flows to the bottom of the page */
+  height: 100%;
+  -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        
+}
+
+::selection {
+  color: white;
+  background: #A0B6BA;
+  opacity: 0.6;
+}
+
+
+
+  ::-webkit-scrollbar {
+    width: 10px; 
+    height: 4px; 
+    background: #ffffff; 
+    opacity: 0.8;
+    padding-right: 3px;
+    
+  }
+  ::-webkit-scrollbar-thumb { 
+    background-color: #A0B6BA; 
+    -webkit-border-radius: 1ex; 
+  }
+
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 10%; /* Place the button at the bottom of the page */
+  left: 10%; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+  /* background-color: #D8B9C0; this is pink*/
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  /* padding-bottom: 50%; */
+  margin: 0;
+  padding: 0;
+  /* min-width: fit-content; */
+  
+}
+
+/* #top -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#home{
+  width: 100%;
+  height: 100%;
+}
+
+#top-container{
+  width: 100%; 
+  height: 9%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.topnav {
+  /* font-family: OpenSans-Regular; 
+  font-size: 19px;   */
+  font-family: 'Open Sans';
+  font-size: 19px;
+  /* font: 19px open-sans-regular; */
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  list-style: none;
+  position: absolute;
+  top: 8%;
+  left: 22%;
+  margin-right: -50%;
+
+  
+}
+
+
+.topnav a {
+  color: #A0B6BA;
+  display: inline-block;
+  text-align: center;
+  
+  text-decoration: none;
+  width: 10em;
+  
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #A0B6BA;
+}
+
+
+#about-container{
+  width: 100%;
+  height: 65%; 
+  position: relative; 
+  top: 15%; 
+}
+
+
+#profile-image-back{
+  width: 20%;
+  height: 35.58%; 
+  left: 27%; 
+  top: 10%; 
+  position: absolute; 
+  background-color: #839A9E;
+  border-radius: 20px; 
+  box-shadow: 0 25px 40px -17px rgb(28, 28, 35, 0.45)
+}
+
+#profile-image{
+  width: 14.8%;
+  height: auto;
+  position: absolute; 
+  top: 0%; 
+  left: 30%
+}
+
+#name{
+  top: 55%; 
+  left: 31%; 
+  /* i liked it right algned but css hates me */
+  /* text-align: right;  */
+  color: #A0B6BA; 
+  font-family: 'Open Sans';
+  font-size: 45px;
+  font-weight: 500; 
+  line-height: 1.3em; 
+  text-transform: uppercase; 
+  letter-spacing: 0.5em; 
+  position: absolute;
+}
+
+
+#intro-container{
+  width: 100%;
+  height: 80%; 
+  position: relative; 
+  top: 0%; 
+}
+
+
+#intro-back-rectangle{
+  width: 23%; 
+  height: 100%; 
+  position: absolute; 
+  top: 0%; 
+  left: 51%; 
+  background-color: #839A9E;
+  border-radius: 20px; 
+  box-shadow: 0 25px 40px -17px rgb(28, 28, 35, 0.45)
+}
+
+#intro-front-rectangle{
+  width: 23%; 
+  height: 100%; 
+  position: absolute; 
+  top: 7%; 
+  left: 53%; 
+  background-color: #A0B6BA;
+  border-radius: 20px; 
+  box-shadow: 0 25px 40px -17px rgb(28, 28, 35, 0.45)
+}
+
+
+#intro-text-container{
+  position: absolute; 
+  left: 55.5%; 
+  top: 6%;
+}
+
+
+#intro-text{ 
+  width: 43%;
+  word-wrap: break-word;
+  font-family: 'Open Sans Light';
+  font-size: 15px;
+  color:#ffffff; 
+  line-height: 1.6;
+  /* background-color: #839A9E; */
+}
+
+#bold-hello{
+  font-family: 'Open Sans';
+  font-size: 30px;
+}
+
+
+/* #portfolio -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.portfolioSquares{
+  width: 20.8%;
+  height: 100%;
+  position: absolute;
+  /* cursor: pointer; */
+}
+
+
+
+#portfolioRedirect{
+  height: 1%; 
+  position: relative; 
+  top: -45%;
+}
+
+#portfolio{
+  width: 100%; 
+  height: 50%; 
+  position: relative; 
+  top: -10%; 
+  justify-content: center;
+}
+
+/* GD ------------------------------------------------------------*/
+
+
+#graphicDesignSquare{
+  height: 100%; 
+  background-color: #A0B6BA;
+  left: 10%; 
+  border-radius: 20px; 
+  box-shadow: 0 25px 40px -17px rgb(28, 28, 35, 0.45);
+}
+
+#graphicDesignHeader{
+  left: 14%; 
+  top: 5%; 
+  font-family: 'Open Sans Light', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  color: #ffffff; 
+  text-align: left; 
+  line-height: 1.3em; 
+  text-transform: uppercase; 
+  letter-spacing: 0.5em; 
+  position: absolute;
+}
+
+#gdText{
+  position: absolute; 
+  left: 14%; 
+  top: 30%; 
+  font-family: 'Open Sans Light';
+  font-size: 15px;
+  color:#ffffff; 
+  line-height: 1.6; 
+}
+
+#behanceIconOuterDiv{
+  width: 100%; 
+  height: 18%; 
+  position: absolute; 
+  bottom: 5%; 
+  right: 0%;
+}
+
+#behance{
+  width: 25%; 
+  height: 100%; 
+  position: absolute; 
+  bottom: 0%; 
+  right: 10%;
+}
+
+#behanceButton{
+  width: 100%; 
+  padding: 20% 0; 
+  position: absolute; 
+  font-size: 25px; 
+  text-align: center; 
+  text-decoration: none; 
+  background: #ffffff; 
+  color: #1C1C23; 
+  border-radius: 20px; 
+}
+
+
+/* LEADERSHIP ------------------------------------------------------------*/
+
+#leadershipSquare{
+  left: 40%; 
+  border-radius: 20px; 
+  background-color: #A0B6BA;
+  box-shadow: 0 25px 40px -17px rgb(28, 28, 35, 0.45);
+}
+
+#leadershipHeader{
+  left: 19%; 
+  top: 5%; 
+  font-family: 'Open Sans Light';
+  font-size: 30px;
+  font-weight: normal;
+  color: #ffffff; 
+  text-align: left; 
+  line-height: 1.3em; 
+  text-transform: uppercase; 
+  letter-spacing: 0.5em; 
+  position: absolute;
+}
+
+#leadText{
+  position: absolute; 
+  left: 19%; 
+  top: 30%; 
+  font-family: 'Open Sans Light';
+  font-size: 15px;
+  color:#ffffff; 
+  line-height: 1.6;
+}
+
+
+
+#leadIconOuterDiv{
+  width: 100%; 
+  height: 18%; 
+  position: absolute; 
+  bottom: 5%; 
+  right: 0%;
+}
+
+#makeAWish{
+  width: 25%; 
+  height: 100%; 
+  position: absolute; 
+  bottom: 0%; 
+  right: 4%;
+}
+
+#makeAWishButton{
+  width: 75%; 
+  padding: 20% 0; 
+  position: absolute; 
+  font-size: 25px; 
+  text-align: center; 
+  text-decoration: none; 
+  background: #ffffff; 
+  color: #1C1C23; 
+  border-radius: 20px; 
+}
+
+#lipdub{
+  width: 25%; 
+  height: 100%; 
+  position: absolute; 
+  bottom: 0%; 
+  right: 27%;
+}
+
+
+#lipdubButton{
+  width: 75%; 
+  padding: 20% 0; 
+  position: absolute; 
+  font-size: 25px; 
+  text-align: center; 
+  text-decoration: none; 
+  background: #ffffff; 
+  color: #1C1C23; 
+  border-radius: 20px; 
+}
+
+#TBD{
+  width: 25%; 
+  height: 100%; 
+  position: absolute; 
+  bottom: 0%; 
+  right: 50%;
+}
+
+#TBDButton{
+  width: 75%; 
+  padding: 20% 0; 
+  position: absolute; 
+  font-size: 25px; 
+  text-align: center; 
+  text-decoration: none; 
+  background: #ffffff; 
+  color: #1C1C23; 
+  border-radius: 20px; 
+}
+
+
+/* CS ------------------------------------------------------------*/
+
+
+#csSquare{
+  left: 70%; 
+  border-radius: 20px; 
+  background-color: #A0B6BA;
+  box-shadow: 0 25px 40px -17px rgb(28, 28, 35, 0.45);
+}
+
+#csHeader{
+  left: 19%; 
+  top: 5%; 
+  font-family: 'Open Sans Light';
+  font-size: 30px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: left; 
+  line-height: 1.3em; 
+  text-transform: uppercase; 
+  letter-spacing: 0.5em; 
+  position: absolute;
+}
+
+#cstext{
+  position: absolute; 
+  left: 19%;
+  top: 20%;
+  font-family: 'Open Sans Light';
+  font-size: 15px;
+  color:#ffffff;
+  line-height: 1.6;
+}
+
+
+#github{
+  width: 25%; 
+  height: 100%; 
+  position: absolute; 
+  top: 26%; 
+  right: 6%;
+}
+
+#githubButton{
+  width: 75%; 
+  padding: 20% 0; 
+  position: absolute; 
+  font-size: 25px; 
+  text-align: center; 
+  text-decoration: none; 
+  background: #ffffff; 
+  color: #1C1C23; 
+  border-radius: 20px; 
+}
+
+
+#githubtext{
+  position: absolute; 
+  left: 19%; 
+  top: 20%; 
+  font-family: 'Open Sans Light';
+  font-size: 15px;
+  color:#ffffff; 
+  line-height: 1.6;
+}
+
+#devpost{
+  width: 25%; 
+  height: 100%; 
+  position: absolute; 
+  top: 48%; 
+  right: 6%;
+}
+
+
+#devpostButton{
+  width: 75%; 
+  padding: 20% 0; 
+  position: absolute; 
+  font-size: 25px; 
+  text-align: center; 
+  text-decoration: none; 
+  background: #ffffff; 
+  color: #1C1C23; 
+  border-radius: 20px;
+}
+
+#devpostText{
+  position: absolute; 
+  left: 19%; 
+  top: 42%; 
+  font-family: 'Open Sans Light';
+  font-size: 15px;
+  color:#ffffff; 
+  line-height: 1.6;
+}
+
+
+#devpost2{
+  width: 25%; 
+  height: 100%; 
+  position: absolute; 
+  top: 70%; 
+  right: 6%;
+}
+
+
+#devpostText2{
+  position: absolute; 
+  left: 19%; 
+  top: 61%; 
+  font-family: 'Open Sans Light';
+  font-size: 15px;
+  color:#ffffff; 
+  line-height: 1.6;
+}
+
+
+
+/* #contact -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+#contactRedirect{
+  height: 5%; 
+  position: relative; 
+  top: 0%;
+}
+
+#contact{
+  width: 100%; 
+  height: 10%; 
+  position: relative;
+  top: 0%;
+}
+
+#mail{
+  width: 5%; 
+  height: 100%;
+  position: absolute; 
+  left: 32.5%;
+}
+
+#mailButton{
+  width: 100%; 
+  padding: 20% 0; 
+  position: absolute; 
+  font-size: 25px; 
+  text-align: center; 
+  text-decoration: none; 
+  background: #D44638; 
+  color: white; 
+  border-radius: 20px; 
+}
+
+
+#facebook{
+  width: 5%; 
+  height: 24.5%; 
+  position: absolute; 
+  left: 42.5%;
+}
+
+#fbButton{
+  width: 100%; 
+  padding: 20% 0; 
+  position: absolute; 
+  font-size: 25px; 
+  text-align: center; 
+  text-decoration: none; 
+  background: #3B5998;
+  color: white; 
+  border-radius: 20px;
+}
+
+#linkedin{
+  width: 5%; 
+  height: 24.5%; 
+  position: absolute; 
+  left: 52.5%;
+}
+
+#linkedinButton{
+  width: 100%; 
+  padding: 20% 0; 
+  position: absolute; 
+  font-size: 25px; 
+  text-align: center; 
+  text-decoration: none; 
+  background: #0072b1; 
+  color: white; 
+  border-radius: 20px; 
+}
+
+
+#instagram{
+  width: 5%; 
+  height: 24.5%; 
+  position: absolute; 
+  left: 62.5%; 
+  cursor: pointer;
+}
+
+#instagramButton{
+  width: 100%; 
+  padding: 20% 0; 
+  position: absolute; 
+  font-size: 25px; 
+  text-align: center; 
+  text-decoration: none; 
+  background-image: linear-gradient(to bottom right, #405DE6, #833AB4, #C13584, #F56040, #FCAF45, #FFDC80); 
+  color: white; 
+  border-radius: 20px; 
+}
+
+
+.icon{
+  cursor: pointer;
+}
+
+.bottomIcons.icon:hover{
+  opacity: 0.7;
+  /* background: #1769ff;  
+  color: #ffffff; */
+}
+
+.portfolioIcon.icon:hover{
+  color: #ffffff !important;
+}
+
+.portfolioIcon.icon.behance:hover{
+  background: #1769ff !important;
+}
+
+.portfolioIcon.icon.github:hover{
+  background: #333 !important;
+}
+
+.portfolioIcon.icon.devpost:hover{
+  background: #165465 !important;
+}
+
+.portfolioIcon.icon.youtube:hover{
+  background: #c4302b !important;
+}
+
+.portfolioIcon.icon.makeAWish:hover{
+  background: #0057B8 !important;
+}
+
+
+
+
+
+#copyright{
+  height: 5%; 
+  position: relative; 
+  top: 2%;
+  font-family: 'Open Sans Light';
+  font-size: 15px;
+  color:#A0B6BA; 
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------idk WHAT----------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+img {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+.flex{
+  display: flex;
+  flex-wrap: wrap
+
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------@MEDIA----------------------------------------------------------------------------------- */
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+/* DELETE ALL REPEATING STUFF ALSO ABOVE WITH THE ICONS*/
+
+html, body {
+  overflow-x: hidden;
+}
+
+  body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* -webkit-text-size-adjust: none; */
+  }
+
+
+  /* #top -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+  #top-container{
+    width: 100%;
+    height: 9%;
+  }
+
+  #home{
+    height: 270vw;
+  }
+
+  .topnav {
+    font-size: 4.5vw;
+    /* letter-spacing: 0.25em; */
+    left: 9vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding-inline-start: 100px; */
+    padding-inline-end: 40vw;
+  }
+  
+  
+  .topnav a {
+    overflow-wrap: break-word;
+    flex: 0 40vw;
+  }
+
+
+  /* #about-container {
+    display: flex;
+    flex-flow: wrap;
+  } */
+
+  
+  #about-container{
+    width: 100vw;
+    top: 20vw;
+  }
+  
+  #profile-container {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* #profile-image-container{
+    justify-content: center;
+    align-items: center;
+  } */
+
+  #profile-image-back{
+    top: 12vw;
+    width: 55vw; 
+    height: 29vw; 
+    left: 22vw;
+    border-radius: 8vw; 
+  }
+
+  #profile-image{
+    top: 0vw;
+    width: 35vw;
+    height: auto;
+    top: 0vw; 
+    left: 31.5vw;
+  }
+
+  #name{
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    font-size: 9.5vw;
+    justify-self: center;
+    justify-content: center;
+    font-weight: 600; 
+    line-height: 1.3em; 
+    text-transform: uppercase; 
+    letter-spacing: 0.5em; 
+    left: 25vw;
+    /* margin:0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+    top: 52vw;
+  }
+
+
+  #intro-container{
+    width: 100vw;
+    height: 65vw; 
+    position: relative; 
+    top: 95vw; 
+  }
+
+
+
+  #intro-back-rectangle{
+    width: 65vw; 
+    height: 137vw; 
+    position: absolute; 
+    top: 0vw; 
+    left: 15vw;
+    border-radius: 8vw; 
+    /* box-shadow: 0 25px 40px -17px rgb(28, 28, 35, 0.45); */
+  }
+  
+  #intro-front-rectangle{
+    width: 65vw; 
+    height: 137vw; 
+    position: absolute; 
+    top: 4vw; 
+    left: 19vw;
+    border-radius: 8vw; 
+    /* box-shadow: 0 25px 40px -17px rgb(28, 28, 35, 0.45); */
+  }
+
+  #intro-text-container{
+    position: absolute; 
+    left: 26vw; 
+    top: 7vw;
+  }
+
+  #intro-text{
+    width: 52vw;
+    word-wrap: break-word;
+    font-size: 4vw;
+    color:#ffffff; 
+    line-height: 1.6;
+  }
+
+  #bold-hello{
+    font-size: 5vw;  
+  }
+
+/* #portfolio -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* .portfolioSquares{
+  width: 70vw;
+  height: 100vw;
+  idk what top does here tbh
+  top: 10vw;
+  position: absolute;
+} */
+
+
+#portfolioRedirect{
+  height: 1vw; 
+  position: relative; 
+  top: -25vw;
+}
+
+#portfolio{
+  width: 100vw; 
+  height: 280vw; 
+  position: relative; 
+  top: -5vw;
+  left: 10vw; 
+  justify-content: center;
+}
+
+#internalHeaders{
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* GD ------------------------------------------------------------*/
+
+
+#graphicDesignSquare{
+  height: 75vw; 
+  width: 70vw;
+  left: 5vw; 
+  /* do we still need this? */
+  top: 10vw;
+  border-radius: 8vw; 
+  /* box-shadow: 0 25px 40px -17px rgb(28, 28, 35, 0.45); */
+}
+
+#graphicDesignHeader{
+  left: 9vw; 
+  top: 5vw; 
+  font-size: 7.5vw;
+  line-height: 1.3em; 
+  letter-spacing: 0.5em; 
+  position: absolute;
+}
+
+#gdText{
+  position: absolute; 
+  left: 9vw; 
+  top: 30vw; 
+  font-size: 4vw;
+  line-height: 1.6; 
+}
+
+#behanceIconOuterDiv{
+  /* idk why.... */
+  top: 139vw;
+  width: 100vw; 
+  height: 17vw; 
+  right: 0vw;
+}
+
+#behance{
+  width: 16vw; 
+  height: 100vw; 
+  position: absolute; 
+  bottom: 0vw; 
+  right: 10vw;
+}
+
+#behanceButton{
+  /* width: 100vw;  */
+  padding: 4vw 0; 
+  position: absolute; 
+  font-size: 7vw; 
+  /* border-radius: 20px; */
+}
+
+
+/* LEADERSHIP ------------------------------------------------------------*/
+
+#leadershipSquare{
+  left: 5vw; 
+  height: 90vw; 
+  width: 70vw;
+  top: 95vw;
+  border-radius: 8vw; 
+  /* box-shadow: 0 25px 40px -17px rgb(28, 28, 35, 0.45); */
+}
+
+
+
+#leadershipHeader{
+  left: 9vw; 
+  top: 5vw; 
+  font-size: 7.5vw;
+  line-height: 1.3em; 
+  letter-spacing: 0.5em; 
+  position: absolute;
+}
+
+
+#leadText{
+  position: absolute; 
+  left: 9vw; 
+  top: 30vw; 
+  font-size: 4vw; 
+  line-height: 1.6;
+}
+
+
+#leadIconOuterDiv{
+  top: 70vw;
+  width: 100vw; 
+  height: 17vw; 
+  right: 0vw;
+}
+
+
+#makeAWish{
+  top: 0vw;
+  width: 17vw; 
+  height: 100vw; 
+  bottom: 0%; 
+  right: 43vw;
+}
+
+/* sm repeated code */
+#makeAWishButton{
+  width: 15vw; 
+  padding: 4vw 0; 
+  position: absolute; 
+  font-size: 7vw; 
+  /* border-radius: 20px; */
+}
+
+#lipdub{
+  top: 0vw;
+  width: 17vw; 
+  height: 100vw; 
+  bottom: 0%; 
+  right: 24vw;
+}
+
+
+#lipdubButton{
+  width: 15vw; 
+  padding: 4vw 0; 
+  position: absolute; 
+  font-size: 7vw; 
+  /* border-radius: 20px; */
+}
+
+#TBD{
+  top: 0vw;
+  width: 17vw; 
+  height: 100vw; 
+  bottom: 0%; 
+  right: 5vw;
+}
+
+#TBDButton{
+  width: 15vw; 
+  padding: 4vw 0; 
+  position: absolute; 
+  font-size: 7vw; 
+  /* border-radius: 20px; */
+}
+
+
+/* CS ------------------------------------------------------------*/
+
+
+#csSquare{
+  left: 5vw; 
+  height: 92vw; 
+  width: 70vw;
+  top: 195vw;
+  border-radius: 8vw; 
+  /* box-shadow: 0 25px 40px -17px rgb(28, 28, 35, 0.45); */
+}
+
+#csHeader{
+  left: 11vw; 
+  top: 5vw; 
+  font-size: 7.5vw;
+  line-height: 1.3em; 
+  letter-spacing: 0.5em; 
+  position: absolute;
+}
+
+#cstext{
+  position: absolute; 
+  left: 11vw; 
+  top: 20vw; 
+  font-size: 4vw; 
+  line-height: 1.6;
+}
+
+
+#github{
+  top: 24vw;
+  width: 17vw; 
+  height: 100vw; 
+  bottom: 0vw; 
+  right: 5vw;
+}
+
+#githubButton{
+  width: 15vw; 
+  padding: 4vw 0; 
+  position: absolute; 
+  font-size: 7vw; 
+  /* border-radius: 20px; */
+}
+
+#githubtext{
+  position: absolute; 
+  left: 11vw; 
+  top: 20vw; 
+  font-size: 4vw; 
+  line-height: 1.6;
+}
+
+#devpost{
+  top: 52vw;
+  width: 17vw; 
+  height: 100vw; 
+  bottom: 0vw; 
+  right: 5vw;
+}
+
+
+#devpostButton{
+  width: 15vw; 
+  padding: 4vw 0; 
+  position: absolute; 
+  font-size: 7vw; 
+  /* border-radius: 20px; */
+}
+
+#devpostText{
+  position: absolute; 
+  left: 11vw; 
+  top: 43vw; 
+  font-size: 4vw; 
+  line-height: 1.6;
+}
+
+
+#devpost2{
+  top: 70vw;
+  width: 17vw; 
+  height: 100vw; 
+  bottom: 0vw; 
+  right: 5vw;
+}
+
+
+#devpostText2{
+  position: absolute; 
+  left: 11vw; 
+  top: 60.5vw; 
+  font-size: 4vw; 
+  line-height: 1.6;
+}
+
+
+/* #contact -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#contactRedirect{
+  height: 5vw; 
+  position: relative; 
+  top: 15vw;
+}
+
+#contact{
+  width: 100vw; 
+  height: 7vw; 
+  position: relative; 
+  top: 15vw;
+}
+
+#mail{
+  top: 0vw;
+  width: 12vw; 
+  height: 10vw; 
+  left: 13.5vw;
+}
+
+#mailButton{
+  width: 13vw; 
+  padding: 3vw 0; 
+  position: absolute; 
+  font-size: 7vw; 
+  /* border-radius: 20px; */
+}
+
+#facebook{
+  top: 0vw;
+  width: 13vw; 
+  height: 10vw; 
+  left: 33.5vw;
+}
+
+#fbButton{
+  width: 13vw; 
+  padding: 3vw 0; 
+  position: absolute; 
+  font-size: 7vw; 
+  /* border-radius: 20px; */
+}
+
+
+#linkedin{
+  top: 0vw;
+  width: 13vw; 
+  height: 10vw; 
+  left: 53.5vw;
+}
+
+#linkedinButton{
+  width: 13vw; 
+  padding: 3vw 0; 
+  position: absolute; 
+  font-size: 7vw; 
+  /* border-radius: 20px; */
+}
+
+
+#instagram{
+  top: 0vw;
+  width: 13vw; 
+  height: 10vw; 
+  left: 73.5vw;
+}
+
+#instagramButton{
+  width: 13vw; 
+  padding: 3vw 0; 
+  position: absolute; 
+  font-size: 7vw; 
+  /* border-radius: 20px; */
+}
+
+
+.icon{
+  cursor: pointer;
+  border-radius: 8vw!important; 
+}
+
+.bottomIcons.icon:hover{
+  opacity: 0.7;
+  
+}
+
+.portfolioIcon.icon:hover{
+  color: #ffffff !important;
+}
+
+.portfolioIcon.icon.behance:hover{
+  background: #1769ff !important;
+}
+
+.portfolioIcon.icon.github:hover{
+  background: #333 !important;
+}
+
+.portfolioIcon.icon.devpost:hover{
+  background: #165465 !important;
+}
+
+.portfolioIcon.icon.youtube:hover{
+  background: #c4302b !important;
+}
+
+.portfolioIcon.icon.makeAWish:hover{
+  background: #0057B8 !important;
+}
+
+
+
+
+#copyright{
+  top: 25vw;
+  font-size: 4vw; 
+}
+
+
+
+
+
+} 
+
+
+
+
+
+
